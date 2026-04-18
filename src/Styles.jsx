@@ -304,7 +304,7 @@ export const Adventure = [
   {
     company: "MAYU Technologies",
     role: "Senior Product Designer",
-    location: "West palm beach, Fl |  Apr 2022 - Jan 2026",
+    location: "West palm beach, Fl |  Apr 2022 - Mar 2026",
     list: [
       <>
         As a <strong>Senior Product Designer</strong>, I executed end-to-end design solutions for e-commerce, and
@@ -345,7 +345,7 @@ export const Adventure = [
   {
     company: "Longbeard",
     role: "Senior UI/UX Designer",
-    location: "Irving, TX |  Aug 2019 - Mar 2022",
+    location: "Irving, TX |  Feb 2016 - Mar 2022",
     subRoles: [
       {
         role: "Senior UI/UX Designer",
