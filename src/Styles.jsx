@@ -166,7 +166,7 @@ export const FooterButtonText = styled(Typography)(({ theme }) => ({
   fontWeight: 700,
   fontSize: 20,
   lineHeight: "33.22px",
-  [theme.breakpoints.between("sm", "md")]: {
+   [theme.breakpoints.down("md")]: {
     fontWeight: 500,
     fontSize: 18,
   },
@@ -255,6 +255,62 @@ export const ResumeListTypography = styled(Typography)(({ theme }) => ({
   },
 }));
 
+export const COMPARISON_SATOSHI_FONT = `'Satoshi', sans-serif`;
+export const COMPARISON_FEATURE_BG = "rgba(37, 92, 254, 0.6)";
+export const COMPARISON_BORDER = "1px solid rgba(153, 153, 153, 0.5)";
+export const COMPARISON_BORDER_FAINT = "1px solid rgba(153, 153, 153, 0.3)";
+export const COMPARISON_TEXT_DARK = "#3D3D3D";
+
+export const COMPARISON_TABLE_CONTAINER_SX = {
+  border: "1px solid",
+  borderColor: "grey.400",
+  borderRadius: "8px",
+  overflow: "hidden",
+  bgcolor: "rgba(255, 255, 255, 0.2)",
+};
+
+export const COMPARISON_FEATURE_SURFACE_SX = {
+  bgcolor: COMPARISON_FEATURE_BG,
+  color: "white",
+  fontFamily: COMPARISON_SATOSHI_FONT,
+};
+
+export const COMPARISON_TABLE_HEADER_CELL_BASE_SX = {
+  fontWeight: 700,
+  borderBottom: COMPARISON_BORDER,
+  py: 2,
+  fontFamily: COMPARISON_SATOSHI_FONT,
+};
+
+export const COMPARISON_TABLE_BODY_CELL_BASE_SX = {
+  borderBottom: COMPARISON_BORDER,
+  py: 2,
+  color: COMPARISON_TEXT_DARK,
+  textAlign: "center",
+  fontFamily: COMPARISON_SATOSHI_FONT,
+};
+
+export const COMPARISON_MOBILE_CARD_SX = {
+  border: "1px solid",
+  borderColor: "grey.300",
+  borderRadius: "12px",
+  bgcolor: "white",
+};
+
+export const COMPARISON_MOBILE_FEATURE_BOX_SX = {
+  ...COMPARISON_FEATURE_SURFACE_SX,
+  px: 2,
+  py: 1,
+  borderRadius: "8px",
+  mb: 2,
+};
+
+export const COMPARISON_MOBILE_CHIP_BASE_SX = {
+  fontWeight: 600,
+  fontSize: "0.75rem",
+  mb: 0.5,
+};
+
 export const Works = [
   {
     title: "ShopeyeQ",
@@ -262,6 +318,20 @@ export const Works = [
     role: "App Design",
     image: "/LatestWorkImages/ShopeyeQPhone.png",
     circle: "/LatestWorkImages/ShopeyeQCircle.png",
+  },
+  {
+    title: "ShopeyeQ",
+    name: "ShopeyeQ-Desktop",
+    role: "Dashboard",
+    image: "/LatestWorkImages/ShopeyeQDesktop.svg",
+    circle: "/LatestWorkImages/ShopeyeQDesktopCircle.svg",
+  },
+  {
+    title: "YouDoo",
+    name: "YouDoo",
+    role: "App Design",
+    image: "/LatestWorkImages/YouDooPhone.svg",
+    circle: "/LatestWorkImages/YouDooCircle.svg",
   },
   {
     title: "HUDU",
@@ -278,6 +348,13 @@ export const Works = [
     circle: "/LatestWorkImages/YatYapCircle.png",
   },
   {
+    title: "Apsy",
+    name: "Apsy",
+    role: "UX research / Design",
+    image: "/LatestWorkImages/ApsyLaptop.png",
+    circle: "/LatestWorkImages/ApsyCircle.png",
+  },
+  {
     title: "WelfLab",
     name: "WelfLab",
     role: "Landing Page",
@@ -291,137 +368,45 @@ export const Works = [
     image: "/LatestWorkImages/AppBakerLaptop.png",
     circle: "/LatestWorkImages/AppBakerCircle.png",
   },
-  {
-    title: "Apsy",
-    name: "Apsy",
-    role: "UX research / Design",
-    image: "/LatestWorkImages/ApsyLaptop.png",
-    circle: "/LatestWorkImages/ApsyCircle.png",
-  },
 ];
 
 export const Adventure = [
   {
-    company: "MAYU Technologies",
-    role: "Senior Product Designer",
-    location: "West palm beach, Fl |  Apr 2022 - Mar 2026",
+    company: "APSY",
+    role: "Product Owner",
+    location: "United States | Oct 2021 - Present",
     list: [
-      <>
-        As a <strong>Senior Product Designer</strong>, I executed end-to-end design solutions for e-commerce, and
-        healthcare products, collaborating with global teams entirely in remote settings.
-      </>,
-      <>
-        Conducted UX research initiatives including <strong>stakeholder interviews, competitive analysis</strong>, and
-        <strong> usability testing</strong>, uncovering insights that directly influenced product direction.
-      </>,
-      <>
-        Redesigned user onboarding flows across<strong> web </strong>and<strong> mobile platforms</strong>, leading to a{" "}
-        <strong>35% improvement </strong>in<strong> user retention</strong> by simplifying interactions and clarifying
-        guidance.
-      </>,
-      <>
-        Built and maintained scalable design systems in <strong>Figma</strong>, enabling
-        <strong> consistent UI patterns</strong> and improving<strong> handoff efficiency</strong> between design and
-        development.
-      </>,
-      <>
-        Worked closely with developers in agile sprints, using <strong>Figma Dev Mode</strong> and
-        <strong> Zeplin</strong> to ensure pixel-perfect implementation and reduce design iteration cycles.
-      </>,
-      <>
-        Synthesized <strong>research findings</strong> into actionable design recommendations and presented them to
-        product managers and senior stakeholders.
-      </>,
-      <>
-        Refined <strong>UI components</strong> and flows based on iterative feedback from QA teams, product owners, and
-        end-users during <strong>UAT phases</strong>.
-      </>,
-      <>
-        Supported successful <strong>launches</strong> of cross-platform mobile apps by delivering production-ready
-        assets and ensuring adherence to <strong>platform-specific guidelines</strong>.
-      </>,
+      "Accelerated from UI/UX designer to Product Owner within six months",
+            "Orchestrated communication with global clients, overseeing the entire design process remotely",
+            "Efficiently managed customer onboarding, cultivating and sustaining 10+ ongoing customer relationships",
+            "Spearheaded 10 research projects, presenting actionable recommendations to clients, designers, and engineers",
+            "Executed comprehensive user research, including competitive analysis, user flow, interviews, and style guide development",
+            "Led the UI design process, incorporating client feedback, coordinating with the development team, and ensuring successful product launches on the app store",
     ],
   },
   {
-    company: "Longbeard",
-    role: "Senior UI/UX Designer",
-    location: "Irving, TX |  Feb 2016 - Mar 2022",
-    subRoles: [
-      {
-        role: "Senior UI/UX Designer",
-        date: "Apr 2020 - Dec 2022",
-        list: [
-          <>
-            Led the design of a <strong>data-rich dashboard</strong> for AI-driven retail execution and tracking,
-            simplifying complex analytics for grocery retailers and suppliers.
-          </>,
-          <>
-            Translated <strong>machine learning outputs</strong> into intuitive data visualizations, improving
-            operational decision-making speed by 28%.
-          </>,
-          <>
-            Designed <strong>AR-enhanced mobile experiences</strong> that enabled field employees to validate product
-            placement in real time, reducing store audit errors.
-          </>,
-          <>
-            Partnered with product managers to define <strong>feature priorities</strong>, ensuring UX direction aligned
-            with both customer needs and technical feasibility.
-          </>,
-        ],
-      },
-      {
-        role: "UX Designer",
-        date: "Feb 2016 - Jul 2019",
-        list: [
-          <>
-            Built detailed <strong>style guides</strong> and <strong>interaction patterns</strong>, which served as the
-            foundation for scalable enterprise product design.
-          </>,
-          <>
-            Facilitated <strong>design thinking workshops</strong> with stakeholders to uncover pain points and generate
-            innovative solutions for retail operations.
-          </>,
-          <>
-            Collaborated with engineers to integrate <strong>real-time data visualization</strong> into mobile and web
-            applications, ensuring seamless cross-platform usability.
-          </>,
-          <>
-            Advocated for <strong>evidence-based design</strong> by presenting research findings and prototypes to
-            executives, driving buy-in for strategic product investments.
-          </>,
-        ],
-      },
-    ],
+    company: "WELF",
+    role: "UI/UX Designer",
+    location: "Germany | Feb 2022 - Nov 2024",
+    list: [
+      "Key contributor to the rebranding of Welf and development of main landing pages",
+            "Headed a dashboard project for image recognition-based retail execution and tracking services, enhancing operational efficiency for grocery retailers and suppliers",
+             "Developed comprehensive style guides and collaborated closely with developers to deliver outstanding design solutions",
+              "Proficient in high performance mobile and web application development, with expertise in AI and AR focused projects",
+    ]
   },
   {
-    company: "Bitmotive",
-    role: "UI Designer",
-    location: "Tampa, FL | Oct 2014 - Jan 2016",
+    company: "Hotelian",
+    role: "UI/UX Designer",
+    location: "U.A.E. | Mar 2019 - Sep 2021",
     list: [
-      <>
-        Collaborated with cross-functional teams to design <strong>6+ responsive applications</strong>, accelerating
-        product release cycles by <strong>20%</strong>.
-      </>,
-      <>
-        Conducted <strong>10+ heuristic evaluations</strong> and <strong>5 competitive UX audits</strong>, identifying
-        25+ issues and improving task completion by <strong>30%</strong>.
-      </>,
-      <>
-        Analyzed <strong>Google Analytics</strong> and <strong>user session data (100K+ visits)</strong> to reduce exit
-        rates through better navigation.
-      </>,
-      <>
-        Redesigned the onboarding experience and landing pages, leading to a <strong>25% drop in bounce rates</strong>
-        and boost in activation.
-      </>,
-      <>
-        Created <strong>8 personas, 10+ user flows</strong>, and <strong>15+ high-fidelity prototypes</strong> that
-        supported executive product strategy decisions.
-      </>,
-      <>
-        Partnered with engineering to implement a <strong>scalable UI design system</strong>, reducing frontend
-        development time by approximately <strong>15%</strong>.
-      </>,
+  "Redesigned the company’s website and developed a tailored app for their existing client base",
+            "Wore multiple hats in a startup environment, gaining diverse insights into UI/UX",
+            "Conducted heuristic evaluation and comparative analysis of major competitors in the travel industry",
+            "Utilized website analytics to offer valuable insights into competitors' current business state and viability",
+             "Spearheaded the redesign of the onboarding experience and landing page layout",
+             "Produced Hi-Fi user flows, site maps, personas, and research documents for the company CEO",
+            "Created the new UI design and collaborated with the engineering team for full development",
     ],
   },
 ];
@@ -596,7 +581,7 @@ export const ListTypography = styled(Typography)(({ theme, title }) => ({
   fontSize: 20,
   lineHeight: "26px",
   color: "#1F1F1F",
-  paddingBottom: 20,
+  // paddingBottom: 20,
   display: "inline",
   [theme.breakpoints.down("md")]: {
     fontSize: 15,
@@ -793,11 +778,77 @@ export const HybridCardSortingList = [
   { desc: "A “Get in Touch” button was added as a separate, prominent call-to-action for accessibility." },
 ];
 
+export const SocialListeningList = [
+  {
+    desc: "Difficulty keeping track of multiple apps and data points.",
+  },
+  {
+desc:"Limited personalization in workout and meal recommendations"
+  },
+  {
+    desc: "Feeling unmotivated or isolated without social accountability"
+  }
+];
+
+export const SecondSocialListeningList = [
+  {
+    desc: "Integrated tracking of mood, movement, and nutrition in one platform",
+  },
+  {
+    desc: "Personalized recommendations based on goals, restrictions, and habits"
+  },
+  {
+    desc: "Social motivation through challenges, leaderboards, and friend support"
+  }
+];
+
+export const LowFidelityWireframesList = [
+  {
+    desc: "Onboarding & Profile Setup - Quick setup of mood, activity, diet, and restrictions.",
+  },
+  {
+    desc: "Daily Mood & Activity Logging - Easy, one-tap check-ins and activity updates."
+  },
+  {
+    desc: "Movement Challenges & Leaderboards - Browsing, joining, and tracking challenges with friends."
+  },
+  {
+    desc: "Nutrition & Recipe Discovery - Browsing recipes, generating shopping lists, and scanning items for dietary compatibility."
+  },
+  {
+    desc: "Insights & Progress Dashboard - Visual summaries of mood, movement, and nutrition trends."
+  },
+];
+
+export const DesignSystemList = [
+  {
+    desc: "Color Palette – Soft, calming tones with vibrant accents to reflect mood and energy",
+  },
+  {
+    desc: "Typography – Clean, readable type for clear hierarchy and quick scanning"
+  },
+  {
+    desc: "Components – Reusable UI elements such as buttons, cards, sliders, and navigation"
+  },
+  {
+    desc: "Iconography – Simple, expressive icons to enhance usability and emotional connection"
+  },
+  {
+    desc: "Interaction Patterns – Defined behaviors for gestures, transitions, and feedback"
+  },
+];
+
 export const CompetitiveAnalysisList = [
   { desc: "Gain insights into digital product trends" },
   { desc: "Identify the target market and competitors" },
   { desc: "Understand how businesses discover and engage with digital solutions" },
   { desc: "Evaluate common pain points in digital product development" },
+];
+
+export const PostLaunchMonitoringList = [
+  { desc: "User feedback and app reviews" },
+  { desc: "Analytics on drop-off points and feature adoption" },
+  { desc: "Behavioral patterns in daily usage and long-term engagement" },
 ];
 
 export const UserInterviewList = [
@@ -900,6 +951,72 @@ export const SurveyPercentages = [
   { text: "of users find real-time data access crucial", number: "85%" },
 ];
 
+export const KeyFindingsListShopeyeQ = [
+  { desc: "“I waste too much time pulling reports from different sources.” → Need for integrated real-time insights" },
+  {
+    desc: "“Assigning tasks manually is frustrating.” → Need for a smart, automated assignment system",
+  },
+  {
+    desc: "“We lack visibility into field team performance.” → Need for a clear KPI tracking system",
+  },
+];
+
+export const KeyDesignListShopeyeQ = [
+  { desc: "Simplicity First – Avoid overwhelming users with excessive data. Prioritize clarity." },
+  {
+    desc: "One-Click Actions – Enable quick task assignments, performance checks, and report generation.",
+  },
+  {
+    desc: "Customizable Insights – Let managers filter and personalize their dashboards.",
+  },
+  {
+    desc: "Mobile-Friendly Design – Ensure access on tablets and mobile devices for on-the-go managers.",
+  },
+];
+
+export const InformationListShopeyeQ = [
+  { desc: "Assignments & Task Manager – Assign, track, and manage field tasks efficiently." },
+  { desc: "People & Team – View and manage field representatives, monitor performance, and assign roles." },
+  { desc: "Business Intelligence – Real-time data insights, reports, and analytics for strategic decision-making." },
+  { desc: "All Products & Portfolio – Manage product listings, track availability, and oversee portfolio performance." },
+  { desc: "Onboarding – Guide new users through a structured setup process." },
+  { desc: "Competitor Brands – Track competitor activities, analyze market trends, and adjust strategies." },
+  { desc: "Promotions – Set up and monitor promotional campaigns and sales activations." },
+  { desc: "Point of Sale (POS) – Oversee store performance, inventory status, and sales impact." },
+  { desc: "Account Management – Configure user roles, permissions, and system settings." },
+];
+
+export const UsabilityTestingShopeyeQ = [
+  {desc: 'Evaluate Navigation & Information Hierarchy - Ensure managers could easily find and access essential sections.'},
+  {desc: 'Assess Task Assignment & Tracking Flows - Test how intuitively users could assign tasks and monitor team performance.'},
+  {desc: 'Measure Data Interpretation & Decision-Making - Observe how managers interacted with KPIs, reports, and insights.'},
+  {desc: 'Identify Pain Points & Friction Areas - Detect any usability blockers that slowed down efficiency.'},
+];
+
+export const tableDataShopeyeQ = [
+  {
+    feature: "Zoho CRM",
+    strength: "Strong automation, good reporting tools",
+    weakness: "Can feel cluttered, steep learning curve",
+  },
+  {
+    feature: "Salesforce",
+    strength: "Powerful analytics, customizable dashboards	",
+    weakness: "Complex UI, requires extensive setup",
+  },
+  {
+    feature: "Repsly",
+    strength: "Excellent field team tracking, mobile-first",
+    weakness: "Lacks deep customization for managers",
+  },
+  {
+    feature: "Pepperi",
+    strength: "Strong B2B sales automation, omnichannel insights",
+    weakness: "UI can feel outdated, limited workflow flexibility",
+  },
+];
+
+
 export const TableRowText = styled(Typography)(({ theme }) => ({
   fontFamily: `'Satoshi', sans-serif`,
   fontWeight: 400,
@@ -926,6 +1043,36 @@ export const TableColumnText = styled(Typography)(({ theme }) => ({
   lineHeight: "26px",
 }));
 
+export const GridTitle = styled(Typography)(({ theme }) => ({
+  fontFamily: `'Satoshi', sans-serif`,
+  fontWeight: 700,
+  fontSize: 20,
+  color: "#111111",
+  lineHeight: "130%",
+  letterSpacing:"0%",
+   [theme.breakpoints.down("md")]: {
+    fontSize: 18,
+  },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: 16,
+  },
+}));
+
+export const GridDescription = styled(Typography)(({ theme }) => ({
+  fontFamily: `'Satoshi', sans-serif`,
+  fontWeight: 500,
+  fontSize: 20,
+  color: "#111111",
+  lineHeight: "130%",
+  letterSpacing:"0%",
+  [theme.breakpoints.down("md")]: {
+    fontSize: 18,
+  },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: 16,
+  },
+}));
+
 export const PrototypeButtonText = styled(Typography)(({ theme }) => ({
   fontFamily: `'Satoshi', sans-serif`,
   fontWeight: 900,
@@ -935,6 +1082,25 @@ export const PrototypeButtonText = styled(Typography)(({ theme }) => ({
   textTransform: "none",
   textUnderlineOffset: "8px",
   textDecoration: "2px white underline",
+  [theme.breakpoints.down("md")]: {
+    fontSize: 14,
+    fontWeight: 700,
+  },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: 10,
+    fontWeight: 600,
+  },
+}));
+
+export const YouDooPrototypeButtonText = styled(Typography)(({ theme }) => ({
+  fontFamily: `'Satoshi', sans-serif`,
+  fontWeight: 900,
+  fontSize: 24,
+  color: "black",
+  lineHeight: "24px",
+  textTransform: "none",
+  textUnderlineOffset: "8px",
+  textDecoration: "2px black underline",
   [theme.breakpoints.down("md")]: {
     fontSize: 14,
     fontWeight: 700,
