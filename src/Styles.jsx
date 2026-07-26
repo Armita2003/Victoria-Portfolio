@@ -372,42 +372,127 @@ export const Works = [
 
 export const Adventure = [
   {
-    company: "APSY",
-    role: "Product Owner",
-    location: "United States | Oct 2021 - Present",
+    company: "Integris Group",
+    role: "Senior Product Designer",
+    location: "West palm beach, Fl |  Apr 2022 - July 2026",
     list: [
-      "Accelerated from UI/UX designer to Product Owner within six months",
-            "Orchestrated communication with global clients, overseeing the entire design process remotely",
-            "Efficiently managed customer onboarding, cultivating and sustaining 10+ ongoing customer relationships",
-            "Spearheaded 10 research projects, presenting actionable recommendations to clients, designers, and engineers",
-            "Executed comprehensive user research, including competitive analysis, user flow, interviews, and style guide development",
-            "Led the UI design process, incorporating client feedback, coordinating with the development team, and ensuring successful product launches on the app store",
+      <>
+        As a <strong>Senior Product Designer</strong>, I executed end-to-end design solutions for e-commerce, and
+        healthcare products, collaborating with global teams entirely in remote settings.
+      </>,
+      <>
+        Conducted UX research initiatives including <strong>stakeholder interviews, competitive analysis</strong>, and
+        <strong> usability testing</strong>, uncovering insights that directly influenced product direction.
+      </>,
+      <>
+        Redesigned user onboarding flows across<strong> web </strong>and<strong> mobile platforms</strong>, leading to a{" "}
+        <strong>35% improvement </strong>in<strong> user retention</strong> by simplifying interactions and clarifying
+        guidance.
+      </>,
+      <>
+        Built and maintained scalable design systems in <strong>Figma</strong>, enabling
+        <strong> consistent UI patterns</strong> and improving<strong> handoff efficiency</strong> between design and
+        development.
+      </>,
+      <>
+        Worked closely with developers in agile sprints, using <strong>Figma Dev Mode</strong> and
+        <strong> Zeplin</strong> to ensure pixel-perfect implementation and reduce design iteration cycles.
+      </>,
+      <>
+        Synthesized <strong>research findings</strong> into actionable design recommendations and presented them to
+        product managers and senior stakeholders.
+      </>,
+      <>
+        Refined <strong>UI components</strong> and flows based on iterative feedback from QA teams, product owners, and
+        end-users during <strong>UAT phases</strong>.
+      </>,
+      <>
+        Supported successful <strong>launches</strong> of cross-platform mobile apps by delivering production-ready
+        assets and ensuring adherence to <strong>platform-specific guidelines</strong>.
+      </>,
     ],
   },
   {
-    company: "WELF",
-    role: "UI/UX Designer",
-    location: "Germany | Feb 2022 - Nov 2024",
-    list: [
-      "Key contributor to the rebranding of Welf and development of main landing pages",
-            "Headed a dashboard project for image recognition-based retail execution and tracking services, enhancing operational efficiency for grocery retailers and suppliers",
-             "Developed comprehensive style guides and collaborated closely with developers to deliver outstanding design solutions",
-              "Proficient in high performance mobile and web application development, with expertise in AI and AR focused projects",
-    ]
+    company: "Longbeard",
+    role: "Senior UI/UX Designer",
+    location: "Irving, TX |  Feb 2016 - Mar 2022",
+    subRoles: [
+      {
+        role: "Senior UI/UX Designer",
+        date: "Apr 2020 - Dec 2022",
+        list: [
+          <>
+            Led the design of a <strong>data-rich dashboard</strong> for AI-driven retail execution and tracking,
+            simplifying complex analytics for grocery retailers and suppliers.
+          </>,
+          <>
+            Translated <strong>machine learning outputs</strong> into intuitive data visualizations, improving
+            operational decision-making speed by 28%.
+          </>,
+          <>
+            Designed <strong>AR-enhanced mobile experiences</strong> that enabled field employees to validate product
+            placement in real time, reducing store audit errors.
+          </>,
+          <>
+            Partnered with product managers to define <strong>feature priorities</strong>, ensuring UX direction aligned
+            with both customer needs and technical feasibility.
+          </>,
+        ],
+      },
+      {
+        role: "UX Designer",
+        date: "Feb 2016 - Jul 2019",
+        list: [
+          <>
+            Built detailed <strong>style guides</strong> and <strong>interaction patterns</strong>, which served as the
+            foundation for scalable enterprise product design.
+          </>,
+          <>
+            Facilitated <strong>design thinking workshops</strong> with stakeholders to uncover pain points and generate
+            innovative solutions for retail operations.
+          </>,
+          <>
+            Collaborated with engineers to integrate <strong>real-time data visualization</strong> into mobile and web
+            applications, ensuring seamless cross-platform usability.
+          </>,
+          <>
+            Advocated for <strong>evidence-based design</strong> by presenting research findings and prototypes to
+            executives, driving buy-in for strategic product investments.
+          </>,
+        ],
+      },
+    ],
   },
   {
-    company: "Hotelian",
-    role: "UI/UX Designer",
-    location: "U.A.E. | Mar 2019 - Sep 2021",
+    company: "Bitmotive",
+    role: "UI Designer",
+    location: "Tampa, FL | Oct 2014 - Jan 2016",
     list: [
-  "Redesigned the company’s website and developed a tailored app for their existing client base",
-            "Wore multiple hats in a startup environment, gaining diverse insights into UI/UX",
-            "Conducted heuristic evaluation and comparative analysis of major competitors in the travel industry",
-            "Utilized website analytics to offer valuable insights into competitors' current business state and viability",
-             "Spearheaded the redesign of the onboarding experience and landing page layout",
-             "Produced Hi-Fi user flows, site maps, personas, and research documents for the company CEO",
-            "Created the new UI design and collaborated with the engineering team for full development",
-    ],
+      <>
+        Collaborated with cross-functional teams to design <strong>6+ responsive applications</strong>, accelerating
+        product release cycles by <strong>20%</strong>.
+      </>,
+      <>
+        Conducted <strong>10+ heuristic evaluations</strong> and <strong>5 competitive UX audits</strong>, identifying
+        25+ issues and improving task completion by <strong>30%</strong>.
+      </>,
+      <>
+        Analyzed <strong>Google Analytics</strong> and <strong>user session data (100K+ visits)</strong> to reduce exit
+        rates through better navigation.
+      </>,
+      <>
+        Redesigned the onboarding experience and landing pages, leading to a <strong>25% drop in bounce rates</strong>
+        and boost in activation.
+      </>,
+      <>
+        Created <strong>8 personas, 10+ user flows</strong>, and <strong>15+ high-fidelity prototypes</strong> that
+        supported executive product strategy decisions.
+      </>,
+      <>
+        Partnered with engineering to implement a <strong>scalable UI design system</strong>, reducing frontend
+        development time by approximately <strong>15%</strong>.
+      </>,
+          ],
   },
 ];
 export const Skills = [
