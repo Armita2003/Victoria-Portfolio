@@ -25,7 +25,7 @@ export default function LandingFirstSlide() {
   return (
     <Container onMouseMove={handleMouseMove} maxWidth="xl" sx={{ padding: "0px !important" }}>
       <Grid container justifyContent="space-evenly" direction="row" pt={"32px"}>
-        <Grid sm={6} item py={isExtraSmallScreen ? 5 : isSmallScreen ? "10px" : "119.5px"} alignSelf="center">
+        <Grid sm={12} md={6} item py={isExtraSmallScreen ? 5 : isSmallScreen ? "10px" : "119.5px"} alignSelf="center">
           <Stack
             alignContent="center"
             alignSelf="center"
@@ -58,8 +58,8 @@ export default function LandingFirstSlide() {
             </Stack>
           </Stack>
         </Grid>
-        <Grid sm={6} margin="auto" item width="100%" height="100%">
-          <Stack position="relative">
+        <Grid md={6} margin="auto" item width="100%" height="100%">
+          {/* <Stack position="relative">
             <img
               style={{
                 width: isExtraSmallScreen ? "80%" : isSmallScreen ? "100%" : "100%",
@@ -70,7 +70,7 @@ export default function LandingFirstSlide() {
               src="/ProfilePic.png"
               alt="Profile Picture"
             />
-          </Stack>
+          </Stack> */}
         </Grid>
       </Grid>
       <Box
